@@ -42,8 +42,7 @@
               "RelativeToolTip": "App\\Source\\Game\\MyGame.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:45:06.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:45:06.507Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "App\\Source\\Engine\\Scene.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T20:39:30.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T20:39:30.488Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "App\\Source\\Game\\AlienSpawner.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Game\\AlienSpawner.cs",
               "RelativeToolTip": "App\\Source\\Game\\AlienSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T17:49:20.206Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "App\\Source\\Game\\Alien.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T17:05:03.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T17:05:03.722Z"
             }
           ]
         },
