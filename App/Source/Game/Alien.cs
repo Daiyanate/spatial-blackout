@@ -9,6 +9,8 @@ namespace TcGame
     {
         private Random r = new Random();
 
+        public int index;
+
         List<Texture> t = new List<Texture>()
         {
             new Texture("Data/Textures/Aliens/Alien-01.png"),
@@ -17,33 +19,24 @@ namespace TcGame
             new Texture("Data/Textures/Aliens/Alien-04.png")
         };
 
+        private float speedRotation;
+
         public Alien()
         {
             Layer = ELayer.Middle;
 
-            Sprite = new Sprite(t[r.Next(0, 4)]);
+            index = r.Next(0, 4);
+            Sprite = new Sprite(t[index]);
             Center();
 
             Speed = 100.0f;
+            speedRotation = 50.0f;
 
-            int forX = r.Next(-1,2);
-
-            while (forX == 0)
-                forX = r.Next(-1, 2);
-
-            Forward.X = forX;
-
-            int forY = r.Next(-1, 2);
-
-            while (forY == 0)
-                forY = r.Next(-1, 2);
-
-            Forward.Y = forY;
-
+            Forward = new Vector2f(r.Next(-1, 2), r.Next(-1, 2));
 
             Position = new Vector2f(
-                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.X/2), 1024 - Convert.ToInt32(Sprite.Texture.Size.X/2)),
-                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.Y/2), 768 - Convert.ToInt32(Sprite.Texture.Size.Y/2))
+                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.X/3), 1024 - Convert.ToInt32(Sprite.Texture.Size.X/3)),
+                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.Y/3), 768 - Convert.ToInt32(Sprite.Texture.Size.Y/3))
                 );
         }
 
@@ -51,10 +44,12 @@ namespace TcGame
         {
             base.Update(dt);
 
-            if (Position.X - Sprite.Texture.Size.X/2 < 0 || Position.X + Sprite.Texture.Size.X/2 > Engine.Get.Window.Size.X)
+            if (Position.X - Sprite.Texture.Size.X/3 <= 0 || Position.X + Sprite.Texture.Size.X/3 >= Engine.Get.Window.Size.X)
                 Forward.X *= -1;
-            else if (Position.Y - Sprite.Texture.Size.Y/2 < 0 || Position.Y + Sprite.Texture.Size.Y/2 > Engine.Get.Window.Size.Y)
+            else if (Position.Y - Sprite.Texture.Size.Y/3 <= 0 || Position.Y + Sprite.Texture.Size.Y/3 >= Engine.Get.Window.Size.Y)
                 Forward.Y *= -1;
+
+            Rotation += speedRotation * dt;
         }
     }
 }

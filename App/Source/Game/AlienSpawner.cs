@@ -1,35 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TcGame
 {
     public class AlienSpawner : Actor
     {
-        private Random r = new Random();
-
-        private int minAliens = 100;
-        private int maxAliens = 100;
+        private int num = 125;
 
         public AlienSpawner()
         {
-            int num = r.Next(minAliens, maxAliens);
+            Alien firstAlien = Engine.Get.Scene.Create<Alien>();
 
-            Alien a = Engine.Get.Scene.Create<Alien>();
-
-            for (int i = 0; i < num; i++)
+            for (int i = 1; i < num; i++)
             {
-                Alien firstAlien = Engine.Get.Scene.GetFirst<Alien>();
-                Alien newAlien = new Alien();
+                Alien newAlien = Engine.Get.Scene.Create<Alien>();
 
-                while (newAlien == firstAlien)
+                while (newAlien.index == firstAlien.index)
                 {
-                    newAlien = new Alien();
+                    newAlien.Destroy();
+                    newAlien = Engine.Get.Scene.Create<Alien>();
                 }
-
-                newAlien = Engine.Get.Scene.Create<Alien>();
             }
         }
     }

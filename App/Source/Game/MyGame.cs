@@ -8,7 +8,6 @@ namespace TcGame
     public class MyGame : Game
     {
         public Hud hud { private set; get; }
-
         public AlienSpawner spawner { private set; get; }
 
         private static MyGame instance;

@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\alien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\black-out-space\\app\\source\\engine\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\engine\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\black-out-space\\app\\source\\game\\mygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\mygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,23 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 117,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MyGame.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Game\\MyGame.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\MyGame.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Game\\MyGame.cs",
               "RelativeToolTip": "App\\Source\\Game\\MyGame.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T16:57:37.863Z",
+              "WhenOpened": "2025-05-20T20:45:06.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Scene.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Engine\\Scene.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Engine\\Scene.cs",
+              "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Engine\\Scene.cs",
+              "RelativeToolTip": "App\\Source\\Engine\\Scene.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T20:39:30.488Z",
               "EditorCaption": ""
             },
             {
@@ -49,7 +66,7 @@
               "RelativeDocumentMoniker": "App\\Source\\Game\\AlienSpawner.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Game\\AlienSpawner.cs",
               "RelativeToolTip": "App\\Source\\Game\\AlienSpawner.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T17:49:20.206Z",
               "EditorCaption": ""
@@ -62,7 +79,7 @@
               "RelativeDocumentMoniker": "App\\Source\\Game\\Alien.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\black-out-space\\App\\Source\\Game\\Alien.cs",
               "RelativeToolTip": "App\\Source\\Game\\Alien.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T17:05:03.722Z",
               "EditorCaption": ""
@@ -75,8 +92,14 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 57,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
