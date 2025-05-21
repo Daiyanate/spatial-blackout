@@ -3,7 +3,7 @@ using SFML.System;
 
 namespace TcGame
 {
-    public class Hud : StaticActor
+    public class Hud : Actor
     {
         public Text t;
 
