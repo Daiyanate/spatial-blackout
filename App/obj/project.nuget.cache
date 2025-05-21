@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/bsZ9qUeCfU=",
+  "dgSpecHash": "4JrmjVAXMxM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\isaac vera\\Documents\\GitHub\\black-out-space\\App\\App.csproj",
+  "projectFilePath": "C:\\Users\\isaac vera\\Documents\\GitHub\\spatial-blackout\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isaac vera\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
     "C:\\Users\\isaac vera\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
