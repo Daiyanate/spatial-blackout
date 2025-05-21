@@ -27,7 +27,8 @@ namespace TcGame
     public void Init()
     {
       background = Engine.Get.Scene.Create<Background>();
-      Engine.Get.Scene.Create<Plane>();  
+      Plane plane= Engine.Get.Scene.Create<Plane>();
+      Hud hud = Engine.Get.Scene.Create<Hud>();
     }
        
     public void DeInit()
