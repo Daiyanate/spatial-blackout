@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lYA0xuvYl6g=",
+  "dgSpecHash": "yxW+5zq8Zt4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\App.csproj",
+  "projectFilePath": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\CopiaGameJam\\black-out-space\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dimit\\.nuget\\packages\\csfml\\2.5.0\\csfml.2.5.0.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\sfml.audio\\2.5.0\\sfml.audio.2.5.0.nupkg.sha512",
