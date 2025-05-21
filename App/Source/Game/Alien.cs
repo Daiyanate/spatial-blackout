@@ -23,7 +23,7 @@ namespace TcGame
 
         public Alien()
         {
-            Layer = ELayer.Middle;
+            Layer = ELayer.Back;
 
             index = r.Next(0, 4);
             Sprite = new Sprite(t[index]);
@@ -35,8 +35,8 @@ namespace TcGame
             Forward = new Vector2f(r.Next(-1, 2), r.Next(-1, 2));
 
             Position = new Vector2f(
-                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.X/3), 1920 - Convert.ToInt32(Sprite.Texture.Size.X/3)+1),
-                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.Y/3), 1080 - Convert.ToInt32(Sprite.Texture.Size.Y/2)+1)
+                r.Next(1920/4 + Convert.ToInt32(Sprite.Texture.Size.X/3), 1920/4*3 - Convert.ToInt32(Sprite.Texture.Size.X/3)+1),
+                r.Next(1080/4 + Convert.ToInt32(Sprite.Texture.Size.Y/3), 980 - Convert.ToInt32(Sprite.Texture.Size.Y/2)+1)
                 );
         }
 
@@ -44,10 +44,13 @@ namespace TcGame
         {
             base.Update(dt);
 
-            if (Position.X - Sprite.Texture.Size.X/3 <= 0 || Position.X + Sprite.Texture.Size.X/3 >= Engine.Get.Window.Size.X)
+            if (Position.X - Sprite.Texture.Size.X/3 <= 1920/4 || Position.X + Sprite.Texture.Size.X/3 >= 1920/4*3)
                 Forward.X *= -1;
-            else if (Position.Y - Sprite.Texture.Size.Y/3 <= 0 || Position.Y + Sprite.Texture.Size.Y/2 >= Engine.Get.Window.Size.Y)
+            else if (Position.Y - Sprite.Texture.Size.Y/3 <= 1080/4 || Position.Y + Sprite.Texture.Size.Y/2 >= 980)
                 Forward.Y *= -1;
+
+            if (Position.X >= 1920/4*3 || Position.X <= 1920/4 || Position.Y <= 1080/4 || Position.Y >= 980)
+                Destroy();
 
             Rotation += speedRotation * dt;
         }

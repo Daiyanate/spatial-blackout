@@ -10,8 +10,8 @@ namespace TcGame
 
         public AlienSpawner()
         {
-            num = 80;
-            increase = 20;
+            num = 90;
+            increase = 10;
 
             SpawnAliens();
         }
