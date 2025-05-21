@@ -1,0 +1,3 @@
+.vs/
+App/obj/
+App/bin/
