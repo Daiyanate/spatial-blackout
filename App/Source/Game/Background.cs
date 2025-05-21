@@ -1,19 +1,18 @@
 ﻿using SFML.Graphics;
 using SFML.System;
-using SFML.Window;
 
 namespace TcGame
 {
-  public class Background : StaticActor
-  {
-    public Background()
+    public class Background : StaticActor
     {
-      Layer = ELayer.Background;
-      Sprite = new Sprite(new Texture("Data/Textures/Background.png"));
-    }
-    public override void Update(float dt)
-    {
-    }
-  }
-}
+        public Background()
+        {
+            Layer = ELayer.Background;
 
+            Sprite = new Sprite(new Texture("Data/Textures/Background.png"));
+            Center();
+
+            Position = new Vector2f(1920/2, 1080/2);
+        }
+    }
+}
