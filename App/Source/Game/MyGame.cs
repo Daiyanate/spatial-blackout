@@ -4,50 +4,58 @@ using SFML.Window;
 
 namespace TcGame
 {
-  public class MyGame : Game
-  {  
-    
-    public Hud hud { private set; get; } 
-        
-    public Background background { get;  private set;}
-    private static MyGame instance;
-    public static MyGame Get
+    public class MyGame : Game
     {
-      get
-      {
-        if (instance == null)
+        public Background bg { private set; get; }
+        public Frame frame { private set; get; }
+        public AlienSpawner spawner { private set; get; }
+        public Hud hud { private set; get; }
+        public GameOver gameOver { private set; get; }
+
+        public Background background { private set; get; }
+        private static MyGame instance;
+        public static MyGame Get
         {
-          instance = new MyGame();
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new MyGame();
+                }
+
+                return instance;
+            }
+        }
+        private MyGame()
+        {
+        }
+        public void Init()
+        {
+            background = Engine.Get.Scene.Create<Background>();
+
+            hud = Engine.Get.Scene.Create<Hud>();
+
+            bg = Engine.Get.Scene.Create<Background>();
+            frame = Engine.Get.Scene.Create<Frame>();
+
+            spawner = Engine.Get.Scene.Create<AlienSpawner>();
+
+            gameOver = Engine.Get.Scene.Create<GameOver>();
+
         }
 
-        return instance;
-      }
-    }
-    private MyGame()
-    {
-    }
-    public void Init()
-    { 
-   
-      background = Engine.Get.Scene.Create<Background>();
-      Plane plane= Engine.Get.Scene.Create<Plane>();
-       Hud hud = Engine.Get.Scene.Create<Hud>();  
-      GameOver gameOver =Engine.Get.Scene.Create<GameOver>();
+        public void DeInit()
+        {
+        }
+        public void Update(float dt)
+        {
 
+        }
+        private void DestroyAll<T>() where T : Actor
+        {
+            var actors = Engine.Get.Scene.GetAll<T>();
+            actors.ForEach(x => x.Destroy());
+        }
     }
-       
-    public void DeInit()
-    {
-    }
-    public void Update(float dt)
-    {
-      
-    }
-    private void DestroyAll<T>() where T : Actor
-    {
-      var actors = Engine.Get.Scene.GetAll<T>();
-      actors.ForEach(x => x.Destroy());
-    }
-  }
 }
 
