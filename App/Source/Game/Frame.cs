@@ -12,7 +12,7 @@ namespace TcGame
             Sprite = new Sprite(new Texture("Data/Textures/Frame.png"));
             Center();
 
-            Position = new Vector2f(1920/2, 1080/2);
+            Position = new Vector2f(Engine.Get.Window.Size.X/2, Engine.Get.Window.Size.Y/2);
         }
     }
 }

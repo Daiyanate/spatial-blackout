@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\frame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\frame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\alienspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 117,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Frame.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Frame.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Game\\Frame.cs",
+              "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Frame.cs",
+              "RelativeToolTip": "App\\Source\\Game\\Frame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:12:38.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Background.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Background.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Game\\Background.cs",
+              "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Background.cs",
+              "RelativeToolTip": "App\\Source\\Game\\Background.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T16:12:38.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Alien.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Alien.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\Alien.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Alien.cs",
               "RelativeToolTip": "App\\Source\\Game\\Alien.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDcAAACfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T16:04:40.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AlienSpawner.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\AlienSpawner.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\AlienSpawner.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\AlienSpawner.cs",
               "RelativeToolTip": "App\\Source\\Game\\AlienSpawner.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T16:04:32.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Hud.cs",
-              "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Hud.cs",
-              "RelativeDocumentMoniker": "App\\Source\\Game\\Hud.cs",
-              "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Hud.cs",
-              "RelativeToolTip": "App\\Source\\Game\\Hud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:04:12.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MyGame.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\MyGame.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\MyGame.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\MyGame.cs",
               "RelativeToolTip": "App\\Source\\Game\\MyGame.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwAcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T15:14:08.739Z",
               "EditorCaption": ""
