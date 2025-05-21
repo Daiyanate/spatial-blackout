@@ -48,9 +48,7 @@ namespace TcGame
 
             // Update actors
             foreach (Actor actor in actors)
-            {
                 actor.Update(dt);
-            }
         }
 
         public void Draw(RenderTarget target, RenderStates states)

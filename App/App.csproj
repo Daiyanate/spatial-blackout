@@ -406,6 +406,9 @@
     <None Update="Data\Textures\Background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Data\Textures\Frame.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\throne.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

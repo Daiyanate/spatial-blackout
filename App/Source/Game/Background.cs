@@ -12,7 +12,7 @@ namespace TcGame
             Sprite = new Sprite(new Texture("Data/Textures/Background.png"));
             Center();
 
-            Position = new Vector2f(1920/2,1080/2);
+            Position = new Vector2f(1920/2, 1080/2);
         }
     }
 }

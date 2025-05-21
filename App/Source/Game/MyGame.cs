@@ -9,6 +9,7 @@ namespace TcGame
     {
         public Hud hud { private set; get; }
         public Background bg { private set; get; }
+        public Frame frame { private set; get; }
         public AlienSpawner spawner { private set; get; }
 
         private static MyGame instance;
@@ -31,7 +32,11 @@ namespace TcGame
 
         public void Init()
         {
+            hud = Engine.Get.Scene.Create<Hud>();
+
             bg = Engine.Get.Scene.Create<Background>();
+            frame = Engine.Get.Scene.Create<Frame>();
+
             spawner = Engine.Get.Scene.Create<AlienSpawner>();
         }
        

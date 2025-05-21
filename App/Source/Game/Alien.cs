@@ -11,7 +11,7 @@ namespace TcGame
 
         public int index;
 
-        List<Texture> t = new List<Texture>()
+        public List<Texture> t = new List<Texture>()
         {
             new Texture("Data/Textures/Aliens/Alien-01.png"),
             new Texture("Data/Textures/Aliens/Alien-02.png"),
@@ -32,7 +32,10 @@ namespace TcGame
             Speed = 100.0f;
             speedRotation = r.Next(-90,91);
 
-            Forward = new Vector2f(r.Next(-1, 2), r.Next(-1, 2));
+            Forward = new Vector2f(
+                r.Next(-1, 2),
+                r.Next(-1, 2)
+                );
 
             Position = new Vector2f(
                 r.Next(1920/4 + Convert.ToInt32(Sprite.Texture.Size.X/3), 1920/4*3 - Convert.ToInt32(Sprite.Texture.Size.X/3)+1),

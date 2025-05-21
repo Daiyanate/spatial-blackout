@@ -2,11 +2,11 @@
 
 namespace TcGame
 {
-    public class AlienSpawner : Actor
+    public class AlienSpawner : StaticActor
     {
         private int num, increase;
 
-        Alien firstAlien;
+        public Alien firstAlien;
 
         public AlienSpawner()
         {
