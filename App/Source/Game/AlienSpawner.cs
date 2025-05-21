@@ -21,7 +21,8 @@ namespace TcGame
             if (Mouse.GetPosition().X >= firstAlien.Position.X - firstAlien.Sprite.Texture.Size.X / 3 &&
                 Mouse.GetPosition().X <= firstAlien.Position.X + firstAlien.Sprite.Texture.Size.X / 3 &&
                 Mouse.GetPosition().Y >= firstAlien.Position.Y - firstAlien.Sprite.Texture.Size.X / 3 &&
-                Mouse.GetPosition().Y <= firstAlien.Position.Y + firstAlien.Sprite.Texture.Size.Y / 2)
+                Mouse.GetPosition().Y <= firstAlien.Position.Y + firstAlien.Sprite.Texture.Size.Y / 2 &&
+                Engine.Get.Scene.GetFirst<Hud>().State == Hud.GameStates.Gameplay)
             {
                 if (Mouse.IsButtonPressed(Mouse.Button.Left))
                 {
@@ -31,7 +32,7 @@ namespace TcGame
                     foreach (Hud h in Engine.Get.Scene.GetAll<Hud>())
                     {
                         h.time += 5;
-                        h.Points += 1;
+                        h.points += 1;
                     }
 
                     num += increase;

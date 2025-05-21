@@ -3,112 +3,98 @@ using SFML.System;
 using System;
 
 namespace TcGame;
-
-
-
-
 public class Hud : Actor
 {
-    Text t, t2, t3,t4;
-    Font f;
+    Text counter, score, instructions, blackout;
 
-    public float time = 27;
-    private int time2;
-    public float BckGrndTimer;
-    public int Points;
+    public float time, bckGrndTimer;
+
+    public int points;
 
     public enum GameStates
     {
         Gameplay,
         GameOver
     }
+
     public GameStates State { get; set; }
+
     public Hud()
     {
-        Font f = new Font("Data/Fonts/LuckiestGuy.ttf");
-        t = new Text("holaaa", f);
-        t2 = new Text("Points", f); 
-
-        t2.Position = new Vector2f(Engine.Get.Window.Size.X / 2 + 170, 5);
-        t.Position = new Vector2f(Engine.Get.Window.Size.X / 2 - 70, 5);
-        t2.Scale *= 1.5f;
-        t.Scale *= 1.5f;
-
-        t3 = new Text("Find the alien who is different from the rest!", f);
-        t3.Position = new Vector2f(Engine.Get.Window.Size.X / 4 + 170, 150);
-        t4 = new Text("Blackout!!!!",f);
-        t4.Scale *= 2f;
-        t4.Position = new Vector2f(Engine.Get.Window.Size.X/2-60, Engine.Get.Window.Size.Y / 2) ;
-        
         Layer = ELayer.Hud;
-        Center();
+
+        time = 30.0f;
+
+        Font f = new Font("Data/Fonts/LuckiestGuy.ttf");
+
+        instructions = new Text("Find the alien who is different from the rest!", f);
+        instructions.FillColor = new Color(245, 206, 14, 255);
+        instructions.CharacterSize = 75;
+        instructions.Origin = new Vector2f(instructions.GetLocalBounds().Width/2, instructions.GetLocalBounds().Height/2);
+        instructions.Position = new Vector2f(Engine.Get.Window.Size.X/2, instructions.GetLocalBounds().Height);
+
+        counter = new Text("Time: ", f);
+        counter.CharacterSize = 50;
+        counter.Origin = new Vector2f(counter.GetLocalBounds().Width, counter.GetLocalBounds().Height/2);
+        counter.Position = new Vector2f(Engine.Get.Window.Size.X - counter.GetLocalBounds().Width, 150);
+
+        score = new Text("Points: ", f);
+        score.CharacterSize = 50;
+        score.Origin = new Vector2f(score.GetLocalBounds().Width/2, score.GetLocalBounds().Height/2);
+        score.Position = new Vector2f(Engine.Get.Window.Size.X/2 + score.GetGlobalBounds().Width, 150);
+
+        blackout = new Text("Blackout!!!!", f);
+        blackout.CharacterSize = 75;
+        blackout.Origin = new Vector2f(blackout.GetLocalBounds().Width/2, blackout.GetLocalBounds().Height/2);
+        blackout.Position = new Vector2f(Engine.Get.Window.Size.X/2, Engine.Get.Window.Size.Y/2);
     }
 
-
-
-
-
-    public override void Draw(RenderTarget target, RenderStates states)
+    public override void Draw(RenderTarget rt, RenderStates rs)
     {
+        base.Draw(rt, rs);
 
-        base.Draw(target, states);
-        t.Draw(target, states);
-        t2.Draw(target, states);
-        t3.Draw(target, states);
+        instructions.Draw(rt, rs);
 
-        if (time<22.5&&BckGrndTimer<=5)
-        {
-            t4.Draw(target, states);
-        }
+        counter.Draw(rt, rs);
+        score.Draw(rt, rs);
+
+        if (time <= 20.0f && bckGrndTimer <= 5)
+            blackout.Draw(rt, rs);
 
         if (State == GameStates.GameOver)
         {
-
             foreach (GameOver Gameover in Engine.Get.Scene.GetAll<GameOver>())
             {
                 Layer = ELayer.Hud;
-                Gameover.Draw(target, states);
-
+                Gameover.Draw(rt, rs);
             }
-
-        } 
-        
-
-
+        }
     }
+
     public override void Update(float dt)
     {
-
         base.Update(dt);
-
-        if (time >= 0)
+        
+        if (time > 0)
         {
             time -= dt;
         }
         else
         {
-            time = 0;
-
             State = GameStates.GameOver;
         }
 
-        time2 = Convert.ToInt32(time);
-        t.DisplayedString = string.Format("Time: {0}", time2);
-        t2.DisplayedString = String.Format("Points:{0} ", Points, t2);
-        t3.DisplayedString = string.Format("Find the alien who is different from the rest!");
+        instructions.DisplayedString = string.Format("Find the alien who is different from the rest!");
 
+        counter.DisplayedString = string.Format($"Time: {Convert.ToInt32(time)}");
+        counter.Position = new Vector2f(Engine.Get.Window.Size.X/2 - counter.GetLocalBounds().Width, 150);
 
-        if (time < 22.5f)
-        {
+        score.DisplayedString = string.Format($"Points: {points}");
+        score.Position = new Vector2f(Engine.Get.Window.Size.X/2 + score.GetGlobalBounds().Width, 150);
 
-            BckGrndTimer += dt;
-        }
-        else if (BckGrndTimer >= 5)
-        {
-            BckGrndTimer = BckGrndTimer;
-
-        }
-
+        if (time <= 20.0f)
+            bckGrndTimer += dt;
+        else if (bckGrndTimer >= 5)
+            bckGrndTimer = bckGrndTimer;
     }
-
 }

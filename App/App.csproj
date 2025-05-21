@@ -394,16 +394,10 @@
     <None Update="Data\Textures\Background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Textures\images.png">
+    <None Update="Data\Textures\Frame.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Textures\Player\Fondo2.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\Textures\Player\nuevofondo.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Data\Textures\Player\Plane.png">
+    <None Update="Data\Textures\GameOver.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Data\throne.png">
