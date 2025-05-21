@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\dimit\\desktop\\visualstudio sfml\\act3github\\black-out-space\\app\\source\\engine\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\engine\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Engine\\Actor.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Engine\\Actor.cs",
+              "ToolTip": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Engine\\Actor.cs",
+              "RelativeToolTip": "App\\Source\\Engine\\Actor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:17:36.97Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
