@@ -30,13 +30,13 @@ namespace TcGame
             Center();
 
             Speed = 100.0f;
-            speedRotation = 50.0f;
+            speedRotation = r.Next(-90,91);
 
             Forward = new Vector2f(r.Next(-1, 2), r.Next(-1, 2));
 
             Position = new Vector2f(
-                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.X/3), 1024 - Convert.ToInt32(Sprite.Texture.Size.X/3)),
-                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.Y/3), 768 - Convert.ToInt32(Sprite.Texture.Size.Y/3))
+                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.X/3), 1920 - Convert.ToInt32(Sprite.Texture.Size.X/3)+1),
+                r.Next(0 + Convert.ToInt32(Sprite.Texture.Size.Y/3), 1080 - Convert.ToInt32(Sprite.Texture.Size.Y/2)+1)
                 );
         }
 
@@ -46,7 +46,7 @@ namespace TcGame
 
             if (Position.X - Sprite.Texture.Size.X/3 <= 0 || Position.X + Sprite.Texture.Size.X/3 >= Engine.Get.Window.Size.X)
                 Forward.X *= -1;
-            else if (Position.Y - Sprite.Texture.Size.Y/3 <= 0 || Position.Y + Sprite.Texture.Size.Y/3 >= Engine.Get.Window.Size.Y)
+            else if (Position.Y - Sprite.Texture.Size.Y/3 <= 0 || Position.Y + Sprite.Texture.Size.Y/2 >= Engine.Get.Window.Size.Y)
                 Forward.Y *= -1;
 
             Rotation += speedRotation * dt;
