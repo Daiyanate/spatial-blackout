@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\dimit\\desktop\\visualstudio sfml\\act3github\\black-out-space\\app\\source\\game\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\dimit\\desktop\\visualstudio sfml\\act3github\\black-out-space\\app\\source\\game\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\dimit\\desktop\\visualstudio sfml\\act3github\\black-out-space\\app\\source\\engine\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\engine\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\dimit\\desktop\\visualstudio sfml\\act3github\\black-out-space\\app\\source\\game\\alienspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\alienspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\dimit\\desktop\\visualstudio sfml\\act3github\\black-out-space\\app\\source\\game\\mygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\mygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Background.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\Background.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Game\\Background.cs",
+              "ToolTip": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\Background.cs",
+              "RelativeToolTip": "App\\Source\\Game\\Background.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T18:55:07.304Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -23,12 +52,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Hud.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\Hud.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Game\\Hud.cs",
+              "ToolTip": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\Hud.cs",
+              "RelativeToolTip": "App\\Source\\Game\\Hud.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwCgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:58:36.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlienSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\AlienSpawner.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Game\\AlienSpawner.cs",
+              "ToolTip": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\AlienSpawner.cs",
+              "RelativeToolTip": "App\\Source\\Game\\AlienSpawner.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:57:44.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyGame.cs",
+              "DocumentMoniker": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\MyGame.cs",
+              "RelativeDocumentMoniker": "App\\Source\\Game\\MyGame.cs",
+              "ToolTip": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Game\\MyGame.cs",
+              "RelativeToolTip": "App\\Source\\Game\\MyGame.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T17:56:57.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Actor.cs",
               "DocumentMoniker": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Engine\\Actor.cs",
               "RelativeDocumentMoniker": "App\\Source\\Engine\\Actor.cs",
               "ToolTip": "C:\\Users\\dimit\\Desktop\\VisualStudio SFML\\Act3Github\\black-out-space\\App\\Source\\Engine\\Actor.cs",
               "RelativeToolTip": "App\\Source\\Engine\\Actor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T17:17:36.97Z",
               "EditorCaption": ""

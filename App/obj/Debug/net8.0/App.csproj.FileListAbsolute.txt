@@ -2,7 +2,6 @@ C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debu
 C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\Data\Fonts\LuckiestGuy.ttf
 C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\App.exe
 C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\Data\Textures\Background.png
-C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\Data\Textures\Player\Plane.png
 C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\App.deps.json
 C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\App.runtimeconfig.json
 C:\Users\dimit\Desktop\VisualStudio SFML\Act3Github\black-out-space\App\bin\Debug\net8.0\App.dll
