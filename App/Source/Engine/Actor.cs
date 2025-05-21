@@ -13,7 +13,8 @@ namespace TcGame
     public Vector2f Forward;
     protected float Speed;
     public enum ELayer
-    {
+    { 
+      GameOver,
       Background,
       Back,
       Middle,

@@ -5,8 +5,10 @@ using SFML.Window;
 namespace TcGame
 {
   public class MyGame : Game
-  {
-    public Hud hud { private set; get; }
+  {  
+    
+    public Hud hud { private set; get; } 
+        
     public Background background { get;  private set;}
     private static MyGame instance;
     public static MyGame Get
@@ -25,10 +27,13 @@ namespace TcGame
     {
     }
     public void Init()
-    {
+    { 
+   
       background = Engine.Get.Scene.Create<Background>();
       Plane plane= Engine.Get.Scene.Create<Plane>();
-      Hud hud = Engine.Get.Scene.Create<Hud>();
+       Hud hud = Engine.Get.Scene.Create<Hud>();  
+      GameOver gameOver =Engine.Get.Scene.Create<GameOver>();
+
     }
        
     public void DeInit()

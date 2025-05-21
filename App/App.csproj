@@ -394,6 +394,9 @@
     <None Update="Data\Textures\Background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Data\Textures\images.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\Textures\Player\Fondo2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -9,7 +9,7 @@ namespace TcGame
     {
       Sprite = new Sprite(new Texture("Data/Textures/Player/Plane.png"));
             Position = new Vector2f(Engine.Get.Window.Position.X/2, Engine.Get.Window.Position.Y / 2) ; 
-      Layer=ELayer.Middle;
+            Layer=ELayer.Middle;
     }
 
         public override void Draw(RenderTarget target, RenderStates states)
