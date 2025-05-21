@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\alien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\alien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\frame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\frame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\alienspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\alienspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\alien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|solutionrelative:app\\source\\game\\alien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E99C53A3-2ACC-4E7D-8627-9BD900BD8B2C}|App\\App.csproj|c:\\users\\isaac\\documents\\github\\spatial-blackout\\app\\source\\game\\mygame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 117,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +38,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Frame.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Frame.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\Frame.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Frame.cs",
               "RelativeToolTip": "App\\Source\\Game\\Frame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:12:38.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T16:12:38.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Background.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Background.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\Background.cs",
@@ -59,25 +58,24 @@
               "RelativeToolTip": "App\\Source\\Game\\Background.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:12:38.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T16:12:38.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Alien.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Alien.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\Alien.cs",
               "ToolTip": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\Alien.cs",
               "RelativeToolTip": "App\\Source\\Game\\Alien.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwDcAAACfAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T16:04:40.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AlienSpawner.cs",
               "DocumentMoniker": "C:\\Users\\isaac\\Documents\\GitHub\\spatial-blackout\\App\\Source\\Game\\AlienSpawner.cs",
               "RelativeDocumentMoniker": "App\\Source\\Game\\AlienSpawner.cs",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "App\\Source\\Game\\AlienSpawner.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T16:04:32.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T16:04:32.978Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "App\\Source\\Game\\MyGame.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T15:14:08.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T15:14:08.739Z"
             }
           ]
         },
