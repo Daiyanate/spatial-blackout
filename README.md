@@ -9,7 +9,7 @@
 
 ## Description
 
-There is a group of aliens on screen. Among all of them, there is one who is different from the rest.\
+There is a group of aliens on screen. Among all of them, there is one that is different from the rest.\
 Your mission is to find the alien, but beware! There is a limited period of time to do it, and the more progress that you make, the difficultier that the game will get.\
 From time to time, there will be a blackout. That means that you won't be able to see anything for a few seconds.
 
@@ -37,4 +37,4 @@ From time to time, a black image will overlap the frame in which the aliens are 
 ## How is this game related to the chosen themes?
 
 - **Running Out of Time:** There is a limited period of time to find the alien, so you are literally "Running Out of Time".
-- **Dark / Light:** There is a blackout that happens from time to time, that means that there is a different between when it is dark and when there is light.
+- **Dark / Light:** There is a blackout that happens from time to time, that means that there is a difference between the moment when it is dark and the moment when there is light.
