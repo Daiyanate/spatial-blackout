@@ -37,12 +37,12 @@ public class Hud : Actor
         counter = new Text("Time: ", f);
         counter.CharacterSize = 50;
         counter.Origin = new Vector2f(counter.GetLocalBounds().Width, counter.GetLocalBounds().Height/2);
-        counter.Position = new Vector2f(Engine.Get.Window.Size.X - counter.GetLocalBounds().Width, 150);
+        counter.Position = new Vector2f(Engine.Get.Window.Size.X/2 - 150, 150);
 
         score = new Text("Points: ", f);
         score.CharacterSize = 50;
-        score.Origin = new Vector2f(score.GetLocalBounds().Width/2, score.GetLocalBounds().Height/2);
-        score.Position = new Vector2f(Engine.Get.Window.Size.X/2 + score.GetGlobalBounds().Width, 150);
+        score.Origin = new Vector2f(0, score.GetLocalBounds().Height/2);
+        score.Position = new Vector2f(Engine.Get.Window.Size.X/2 + 150, 150);
 
         blackout = new Text("Blackout!!!!", f);
         blackout.CharacterSize = 75;
@@ -83,11 +83,15 @@ public class Hud : Actor
 
         instructions.DisplayedString = string.Format("Find the alien that is different from the rest!");
 
+        counter.Origin = new Vector2f(counter.GetLocalBounds().Width, counter.GetLocalBounds().Height / 2);
+        counter.Position = new Vector2f(Engine.Get.Window.Size.X/2-150, 150);
+
         counter.DisplayedString = string.Format($"Time: {Convert.ToInt32(time)}");
-        counter.Position = new Vector2f(Engine.Get.Window.Size.X/2 - counter.GetLocalBounds().Width, 150);
+
+        score.Origin = new Vector2f(0, score.GetLocalBounds().Height / 2);
+        score.Position = new Vector2f(Engine.Get.Window.Size.X/2+150, 150);
 
         score.DisplayedString = string.Format($"Points: {points}");
-        score.Position = new Vector2f(Engine.Get.Window.Size.X/2 + score.GetGlobalBounds().Width, 150);
 
         if (time <= 20.0f)
             bckGrndTimer += dt;
