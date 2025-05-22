@@ -1,15 +1,11 @@
-﻿using SFML.Graphics;
-using SFML.System;
-using SFML.Window;
-
-namespace TcGame
+﻿namespace TcGame
 {
     public class MyGame : Game
     {
+        public Hud hud { private set; get; }
         public Background bg { private set; get; }
         public Frame frame { private set; get; }
         public AlienSpawner spawner { private set; get; }
-        public Hud hud { private set; get; }
         public GameOver gameOver { private set; get; }
 
         private static MyGame instance;
@@ -38,7 +34,6 @@ namespace TcGame
             frame = Engine.Get.Scene.Create<Frame>();
             spawner = Engine.Get.Scene.Create<AlienSpawner>();
             gameOver = Engine.Get.Scene.Create<GameOver>();
-
         }
 
         public void DeInit()

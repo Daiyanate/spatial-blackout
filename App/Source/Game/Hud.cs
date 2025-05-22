@@ -1,5 +1,6 @@
 ﻿using SFML.Graphics;
 using SFML.System;
+using SFML.Window;
 using System;
 
 namespace TcGame;
@@ -27,7 +28,7 @@ public class Hud : Actor
 
         Font f = new Font("Data/Fonts/LuckiestGuy.ttf");
 
-        instructions = new Text("Find the alien who is different from the rest!", f);
+        instructions = new Text("Find the alien that is different from the rest!", f);
         instructions.FillColor = new Color(245, 206, 14, 255);
         instructions.CharacterSize = 75;
         instructions.Origin = new Vector2f(instructions.GetLocalBounds().Width/2, instructions.GetLocalBounds().Height/2);
@@ -76,15 +77,11 @@ public class Hud : Actor
         base.Update(dt);
         
         if (time > 0)
-        {
             time -= dt;
-        }
         else
-        {
             State = GameStates.GameOver;
-        }
 
-        instructions.DisplayedString = string.Format("Find the alien who is different from the rest!");
+        instructions.DisplayedString = string.Format("Find the alien that is different from the rest!");
 
         counter.DisplayedString = string.Format($"Time: {Convert.ToInt32(time)}");
         counter.Position = new Vector2f(Engine.Get.Window.Size.X/2 - counter.GetLocalBounds().Width, 150);
