@@ -68,6 +68,22 @@ public class Hud : Actor
             {
                 Layer = ELayer.Hud;
                 Gameover.Draw(rt, rs);
+
+                if (Keyboard.IsKeyPressed(Keyboard.Key.R))
+                {
+                    foreach (Hud h in Engine.Get.Scene.GetAll<Hud>())
+                        h.Destroy();
+                    foreach (GameOver g in Engine.Get.Scene.GetAll<GameOver>())
+                        g.Destroy();
+                    foreach (AlienSpawner s in Engine.Get.Scene.GetAll<AlienSpawner>())
+                        s.Destroy();
+                    foreach (Alien a in Engine.Get.Scene.GetAll<Alien>())
+                        a.Destroy();
+
+                    Engine.Get.Scene.Create<Hud>();
+                    Engine.Get.Scene.Create<GameOver>();
+                    Engine.Get.Scene.Create<AlienSpawner>();
+                }
             }
         }
     }

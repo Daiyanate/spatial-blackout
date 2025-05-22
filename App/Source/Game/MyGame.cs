@@ -29,11 +29,13 @@
 
         public void Init()
         {
-            hud = Engine.Get.Scene.Create<Hud>();
             bg = Engine.Get.Scene.Create<Background>();
             frame = Engine.Get.Scene.Create<Frame>();
-            spawner = Engine.Get.Scene.Create<AlienSpawner>();
+
+            hud = Engine.Get.Scene.Create<Hud>();
             gameOver = Engine.Get.Scene.Create<GameOver>();
+
+            spawner = Engine.Get.Scene.Create<AlienSpawner>();
         }
 
         public void DeInit()
@@ -44,6 +46,11 @@
         public void Update(float dt)
         {
 
+        }
+
+        public void InitGame()
+        {
+            
         }
 
         private void DestroyAll<T>() where T : Actor

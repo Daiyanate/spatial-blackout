@@ -27,6 +27,7 @@ In this group, there are several copies of 3 types of aliens and a unique copy o
 You have to look for the alien that is diferent from the rest and click it. There is a counter that tells you how much time you have to do it.
 - If the counter reaches zero:
   - You lose.
+  - You can restart pressing "R".
 - If you find the alien before you run out of time:
   - You get 1 point and 5 extra seconds.
   - A new group of aliens gets instantiated.
