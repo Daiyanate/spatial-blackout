@@ -12,8 +12,6 @@ namespace TcGame
 
         private float speedRotation;
 
-        private bool isDisposed = false;
-
         public Alien() { }
 
         public void Initialize(int index)
@@ -44,47 +42,17 @@ namespace TcGame
         {
             base.Update(dt);
 
-            // If condition made to prevent the alien from being affected by the code below the Update method.
-            if (Sprite != null)
-            {
-                if (Position.X - Sprite.Texture.Size.X/3 <= Engine.Get.Window.Size.X/4 ||
-                Position.X + Sprite.Texture.Size.X/3 >= Engine.Get.Window.Size.X/4*3)
-                    Forward.X *= -1;
-                else if (Position.Y - Sprite.Texture.Size.Y/3 <= Engine.Get.Window.Size.Y/4 ||
-                    Position.Y + Sprite.Texture.Size.Y/2 >= Engine.Get.Window.Size.Y - 100)
-                    Forward.Y *= -1;
+            if (Position.X - Sprite.Texture.Size.X / 3 <= Engine.Get.Window.Size.X / 4 ||
+                Position.X + Sprite.Texture.Size.X / 3 >= Engine.Get.Window.Size.X / 4 * 3)
+                Forward.X *= -1;
+            else if (Position.Y - Sprite.Texture.Size.Y / 3 <= Engine.Get.Window.Size.Y / 4 ||
+                Position.Y + Sprite.Texture.Size.Y / 2 >= Engine.Get.Window.Size.Y - 100)
+                Forward.Y *= -1;
 
-                if (Position.X >= 1920 / 4 * 3 || Position.X <= 1920 / 4 || Position.Y <= 1080 / 4 || Position.Y >= 980)
-                    Destroy();
+            if (Position.X >= 1920 / 4 * 3 || Position.X <= 1920 / 4 || Position.Y <= 1080 / 4 || Position.Y >= 980)
+                Destroy();
 
-                Rotation += speedRotation * dt;
-            }
-        }
-
-        // ---------- Attempt to explicitly destroy the sprite in order to prevent memory leaks ---------- 
-
-        public new void Dispose()
-        {
-            if (isDisposed) return;
-
-            if (Sprite != null)
-            {
-                Sprite.Dispose();
-                Sprite = null;
-            }
-
-            isDisposed = true;
-        }
-
-        ~Alien()
-        {
-            Dispose();
-        }
-
-        public new void Destroy()
-        {
-            Dispose();
-            base.Destroy();
+            Rotation += speedRotation * dt;
         }
     }
 }

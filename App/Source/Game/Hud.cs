@@ -9,7 +9,7 @@ public class Hud : Actor
     Text counter, score, instructions, blackout;
     Font f;
 
-    public float time, bckGrndTimer;
+    public float time;
 
     public int points;
 
@@ -60,7 +60,7 @@ public class Hud : Actor
         counter.Draw(rt, rs);
         score.Draw(rt, rs);
 
-        if (time <= 20.0f && bckGrndTimer <= 5)
+        if (time <= 20.0f && time >= 15.0f)
             blackout.Draw(rt, rs);
 
         if (State == GameStates.GameOver)
@@ -90,9 +90,6 @@ public class Hud : Actor
         score.Position = new Vector2f(Engine.Get.Window.Size.X/2+150, 150);
 
         score.DisplayedString = string.Format($"Points: {points}");
-
-        if (time <= 20.0f)
-            bckGrndTimer += dt;
 
         if (State == GameStates.GameOver)
         {

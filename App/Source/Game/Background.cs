@@ -26,7 +26,7 @@ namespace TcGame
         {
             foreach (Hud h in Engine.Get.Scene.GetAll<Hud>())
             {
-                if (h.time <= 20.0f && h.bckGrndTimer <= 5)
+                if (h.time <= 20.0f && h.time >= 15.0f)
                     Layer = ELayer.Front;
                 else
                     Layer = ELayer.Background;
