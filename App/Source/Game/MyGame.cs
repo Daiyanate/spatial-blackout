@@ -32,10 +32,10 @@
             bg = Engine.Get.Scene.Create<Background>();
             frame = Engine.Get.Scene.Create<Frame>();
 
-            hud = Engine.Get.Scene.Create<Hud>();
-            gameOver = Engine.Get.Scene.Create<GameOver>();
-
             spawner = Engine.Get.Scene.Create<AlienSpawner>();
+
+            gameOver = Engine.Get.Scene.Create<GameOver>();
+            hud = Engine.Get.Scene.Create<Hud>();
         }
 
         public void DeInit()

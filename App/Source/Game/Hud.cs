@@ -7,6 +7,7 @@ namespace TcGame;
 public class Hud : Actor
 {
     Text counter, score, instructions, blackout;
+    Font f;
 
     public float time, bckGrndTimer;
 
@@ -26,7 +27,7 @@ public class Hud : Actor
 
         time = 30.0f;
 
-        Font f = new Font("Data/Fonts/LuckiestGuy.ttf");
+        f = TextureManager.HUDFont;
 
         instructions = new Text("Find the alien that is different from the rest!", f);
         instructions.FillColor = new Color(245, 206, 14, 255);
@@ -64,27 +65,8 @@ public class Hud : Actor
 
         if (State == GameStates.GameOver)
         {
-            foreach (GameOver Gameover in Engine.Get.Scene.GetAll<GameOver>())
-            {
-                Layer = ELayer.Hud;
-                Gameover.Draw(rt, rs);
-
-                if (Keyboard.IsKeyPressed(Keyboard.Key.R))
-                {
-                    foreach (Hud h in Engine.Get.Scene.GetAll<Hud>())
-                        h.Destroy();
-                    foreach (GameOver g in Engine.Get.Scene.GetAll<GameOver>())
-                        g.Destroy();
-                    foreach (AlienSpawner s in Engine.Get.Scene.GetAll<AlienSpawner>())
-                        s.Destroy();
-                    foreach (Alien a in Engine.Get.Scene.GetAll<Alien>())
-                        a.Destroy();
-
-                    Engine.Get.Scene.Create<Hud>();
-                    Engine.Get.Scene.Create<GameOver>();
-                    Engine.Get.Scene.Create<AlienSpawner>();
-                }
-            }
+            GameOver g = Engine.Get.Scene.GetFirst<GameOver>();
+            g.Draw(rt, rs);
         }
     }
 
@@ -111,7 +93,34 @@ public class Hud : Actor
 
         if (time <= 20.0f)
             bckGrndTimer += dt;
-        else if (bckGrndTimer >= 5)
-            bckGrndTimer = bckGrndTimer;
+
+        if (State == GameStates.GameOver)
+        {
+            GameOver g = Engine.Get.Scene.GetFirst<GameOver>();
+            g.Layer = ELayer.Hud;
+
+            if (Keyboard.IsKeyPressed(Keyboard.Key.R))
+            {
+                time = 30.0f;
+                points = 0;
+
+                // Reinitializing GameOver
+                g.Layer = ELayer.GameOver;
+
+                // Destroying Aliens
+                foreach (Alien a in Engine.Get.Scene.GetAll<Alien>())
+                    a.Destroy();
+
+                // Reinitializing AlienSpawner
+                AlienSpawner s = Engine.Get.Scene.GetFirst<AlienSpawner>();
+
+                s.num = 100;
+                s.increase = 20;
+                s.SpawnAliens();
+
+                // Change game state to Gameplay
+                State = GameStates.Gameplay;
+            }
+        }
     }
 }

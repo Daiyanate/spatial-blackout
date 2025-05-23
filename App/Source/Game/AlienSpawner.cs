@@ -1,14 +1,21 @@
 ﻿using SFML.Window;
+using System;
+using System.Linq;
 
 namespace TcGame
 {
     public class AlienSpawner : StaticActor
     {
-        private int num, increase;
+        public int num, increase;
 
         public Alien firstAlien;
 
         public AlienSpawner()
+        {
+            InitializeSpawn();
+        }
+
+        public void InitializeSpawn()
         {
             num = 100;
             increase = 20;
@@ -26,9 +33,6 @@ namespace TcGame
             {
                 if (Mouse.IsButtonPressed(Mouse.Button.Left))
                 {
-                    foreach (Alien a in Engine.Get.Scene.GetAll<Alien>())
-                        a.Destroy();
-
                     foreach (Hud h in Engine.Get.Scene.GetAll<Hud>())
                     {
                         h.time += 5;
@@ -41,19 +45,19 @@ namespace TcGame
             }
         }
 
-        private void SpawnAliens()
+        public void SpawnAliens()
         {
+            foreach (Alien a in Engine.Get.Scene.GetAll<Alien>())
+                a.Destroy();
+
             firstAlien = Engine.Get.Scene.Create<Alien>();
+            int firstAlienIndex = new Random().Next(0,4);
+            firstAlien.Initialize(firstAlienIndex);
 
             for (int i = 1; i < num; i++)
             {
                 Alien newAlien = Engine.Get.Scene.Create<Alien>();
-
-                while (newAlien.index == firstAlien.index)
-                {
-                    newAlien.Destroy();
-                    newAlien = Engine.Get.Scene.Create<Alien>();
-                }
+                newAlien.Initialize(Enumerable.Range(0, 4).Where(x => x != firstAlienIndex).OrderBy(_ => Random.Shared.Next()).First());
             }
         }
     }
