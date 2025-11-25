@@ -2,6 +2,14 @@
 
 **Find the impostor before you run out of time!**
 
+## What is this?
+
+*Spatial Blackout* is a game programmed with C#, using a preexisting engine and made to be executed directly from Microsoft Visual Studio (pressing the Start button).
+
+This game is part of a university project, which consisted in simulating a game jam; We, as collaborators, had to distribute the tasks, coordinate with each other, and develop the game in 2 days.
+
+**IMPORTANT!** This game works properly only if the screen resolution is set to 1920x1080.
+
 ## Chosen themes
 
 - Running Out of Time
@@ -9,13 +17,16 @@
 
 ## Description
 
-There is a group of aliens on screen. Among all of them, there is one that is different from the rest.\
-Your mission is to find the alien, but beware! There is a limited period of time to do it, and the more progress that you make, the difficultier that the game will get.\
+There is a group of aliens on screen. Among all of them, there is one that is different from the rest.
+
+Your mission is to find the alien, but beware! There is a limited period of time to do it, and the more progress that you make, the difficultier that the game will get.
+
 From time to time, there will be a blackout. That means that you won't be able to see anything for a few seconds.
 
 ## How does this game work?
 
-There is a frame in which there is a group of aliens floating.\
+There is a frame in which there is a group of aliens floating.
+
 In this group, there are several copies of 3 types of aliens and a unique copy of a different one.
 
 > These are the different types of aliens that will appear on screen:\
