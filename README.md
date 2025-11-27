@@ -6,7 +6,7 @@
 
 *Spatial Blackout* is a game programmed with C#, using a preexisting engine and made to be executed directly from Microsoft Visual Studio (pressing the Start button).
 
-This game is part of a university project, which consisted in simulating a game jam; We, as collaborators, had to distribute the tasks, coordinate with each other, and develop the game in 2 days.
+This game is part of a university project, which consisted in simulating a game jam; We, as a team, had to distribute the tasks, coordinate with each other, and develop the game in 2 days.
 
 **IMPORTANT!** This game works properly only if the screen resolution is set to 1920x1080.
 
