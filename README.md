@@ -50,3 +50,7 @@ From time to time, a black image will overlap the frame in which the aliens are 
 
 - **Running Out of Time:** There is a limited period of time to find the alien, so you are literally "Running Out of Time".
 - **Dark / Light:** There is a blackout that happens from time to time, that means that there is a difference between the moment when it is dark and the moment when there is light.
+
+## License
+
+Spatial Blackout  © 2025 by Daiyanate &amp; Dimitri Hernandez is licensed under Creative Commons Attribution-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
