@@ -23,6 +23,8 @@ Your mission is to find the alien, but beware! There is a limited period of time
 
 From time to time, there will be a blackout. That means that you won't be able to see anything for a few seconds.
 
+![GIF](./Resources/SpatialBlackout_Gameplay_GIF.gif)
+
 ## How does this game work?
 
 There is a frame in which there is a group of aliens floating.
